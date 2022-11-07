@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pomodoro</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <div class="pomodoro-container">
+            <div class="wave">
+                <span style="--item:1">P</span>
+                <span style="--item:2">O</span>
+                <span style="--item:3">M</span>
+                <span style="--item:4">O</span>
+                <span style="--item:5">D</span>
+                <span style="--item:6">O</span>
+                <span style="--item:7">R</span>
+                <span style="--item:8">O</span>
+            </div>
+            <div class="row-container clock-container">
+                <h1 id="clock">25:00</h1>
+                <div class="input-container">
+                    <label for="cycles-input">Ciclos Pomodoro</label>
+                    <input id="cycles-input" type="number" value="1">
+                </div>
+            </div>
+            <div class="row-container start-container">
+                <button id="start-button">INICIAR</button>
+                <button id="restart-button" onclick="location.href = location.href">REINICIAR</button>
+            </div>
+            <div class="row-container settings-container">
+                <div class="input-container">
+                    <label for="work-time">Estudiar</label>
+                    <input id="work-time" type="text" value="25">
+                </div>
+                <div class="input-container">
+                    <label for="break-time">Break</label>
+                    <input id="break-time" type="text" value="5">
+                </div>
+                <div class="input-container">
+                    <label for="rest-time">Descanso</label>
+                    <input id="rest-time" type="text" value="15">
+                </div>
+            </div>
+            <div class="tareas-container">
+                <h1>Tareas Pendientes</h1>
+                <input type="text" id="tarea">
+                <button id="agregar">Agregar</button>
+        
+                <h3>Tareas - <span id="cantidad"> 0</span></h3>
+                <ol id="listado">
+        
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>
